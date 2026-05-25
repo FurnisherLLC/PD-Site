@@ -1,0 +1,377 @@
+/* Phobos Deimos Engineering | Main Stylesheet */
+/* last revised march 2016. header gradient added */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333;
+    background: #e8e8e8 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkYPj/n4EBCxg5OTn/MzIyYkgwMTAwMIMVAADrRwP/Un4v1wAAAABJRU5ErkJggg==);
+}
+
+#wrapper {
+    width: 962px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #bbb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    min-height: 600px;
+    overflow: hidden;
+}
+
+/* --- HEADER with reverse pipe gradient --- */
+
+#header {
+    background: #0f2440;
+    background: linear-gradient(to bottom, #0f2440 0%, #1e4068 25%, #234a78 50%, #1e4068 75%, #0f2440 100%);
+    color: #fff;
+    padding: 20px 24px 16px 24px;
+    border-bottom: 3px solid #b02b1a;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+#header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+#header .tagline {
+    font-size: 12px;
+    color: #9bb5d4;
+    margin-top: 3px;
+    font-style: italic;
+}
+
+/* header subnav. added 2014 */
+
+#header .subnav {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 11px;
+}
+
+#header .subnav a {
+    color: #c7d9ed;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+#header .subnav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* --- SIDEBAR --- */
+
+#sidebar {
+    float: left;
+    width: 210px;
+    background: #f0f2f5;
+    border-right: 1px solid #d0d3d8;
+    min-height: 500px;
+    padding: 0 0 16px 0;
+}
+
+#sidebar .side-header {
+    background: #1a3050;
+    background: linear-gradient(to bottom, #1a3050, #234570);
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #b02b1a;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li {
+    border-bottom: 1px solid #e0e3e8;
+}
+
+#sidebar ul li a {
+    display: block;
+    padding: 9px 16px;
+    color: #1a3050;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#sidebar ul li a:hover {
+    background: #dce3ed;
+    color: #b02b1a;
+}
+
+#sidebar .side-contact {
+    padding: 14px 16px;
+    margin: 16px 10px 0 10px;
+    font-size: 11px;
+    color: #555;
+    border: 1px solid #d0d3d8;
+    background: #fafbfc;
+    line-height: 1.6;
+}
+
+#sidebar .side-contact strong {
+    color: #1a3050;
+}
+
+/* --- MAIN CONTENT --- */
+
+#main {
+    margin-left: 210px;
+    padding: 24px 28px;
+}
+
+#main h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    color: #1a3050;
+    font-weight: normal;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #b02b1a;
+}
+
+#main h3 {
+    font-size: 14px;
+    color: #1a3050;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+#main p {
+    margin-bottom: 12px;
+    line-height: 1.65;
+}
+
+#main a {
+    color: #1a6fa0;
+    text-decoration: underline;
+}
+
+#main a:hover {
+    color: #b02b1a;
+}
+
+#main ul {
+    margin-bottom: 14px;
+    padding-left: 22px;
+}
+
+#main ul li {
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+/* callout box. engineering highlight. 2015 */
+
+.callout {
+    background: #f0f5fb;
+    border: 1px solid #c8d8e8;
+    border-left: 4px solid #1a6fa0;
+    padding: 14px 16px;
+    margin: 16px 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.callout strong {
+    color: #1a3050;
+}
+
+/* process flow. horizontal steps */
+
+.process-steps {
+    margin: 18px 0;
+    border: 1px solid #ddd;
+    background: #fafbfc;
+}
+
+.process-steps table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.process-steps td {
+    width: 25%;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 11px;
+    color: #555;
+    border-right: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.process-steps td:last-child {
+    border-right: none;
+}
+
+.process-steps .step-num {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a3050;
+    margin-bottom: 4px;
+}
+
+.process-steps .step-title {
+    display: block;
+    font-weight: bold;
+    color: #1a3050;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+/* --- TABLES --- */
+
+table.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px 0;
+    font-size: 12px;
+}
+
+table.spec-table th {
+    background: #1a3050;
+    background: linear-gradient(to bottom, #234570, #1a3050);
+    color: #fff;
+    padding: 7px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #b02b1a;
+}
+
+table.spec-table td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table.spec-table tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+table.spec-table .spec-label {
+    font-weight: bold;
+    color: #555;
+    width: 180px;
+}
+
+/* --- HR --- */
+
+hr.divider {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #c8d8e8, transparent);
+    margin: 22px 0;
+}
+
+hr.thin {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 16px 0;
+}
+
+/* --- FOOTER --- */
+
+#footer {
+    clear: both;
+    background: #0f2440;
+    background: linear-gradient(to bottom, #0f2440, #08162a);
+    color: #8ba3c4;
+    padding: 16px 24px;
+    font-size: 11px;
+    border-top: 3px solid #b02b1a;
+}
+
+#footer a {
+    color: #8ba3c4;
+    text-decoration: underline;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+#footer .footer-left {
+    float: left;
+}
+
+#footer .footer-right {
+    float: right;
+    text-align: right;
+}
+
+/* contact page. no sidebar here */
+
+#main-full {
+    padding: 24px 28px;
+}
+
+#main-full h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    color: #1a3050;
+    font-weight: normal;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #b02b1a;
+}
+
+#main-full p {
+    margin-bottom: 12px;
+    line-height: 1.65;
+}
+
+.contact-block {
+    margin-top: 16px;
+}
+
+.contact-block p {
+    margin-bottom: 4px;
+}
+
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.photo-box {
+    margin: 16px 0;
+    border: 1px solid #bbb;
+    padding: 3px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.photo-box img {
+    display: block;
+    max-width: 100%;
+}
+
+.photo-caption {
+    font-size: 10px;
+    color: #888;
+    margin-top: 4px;
+    font-style: italic;
+}
